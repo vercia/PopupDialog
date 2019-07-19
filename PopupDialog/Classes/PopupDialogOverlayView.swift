@@ -83,7 +83,7 @@ final public class PopupDialogOverlayView: UIView {
     internal lazy var overlay: UIView = {
         let overlay = UIView(frame: .zero)
         overlay.backgroundColor = .black
-        overlay.alpha = 0.7
+        overlay.alpha = 0.6
         overlay.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         return overlay
     }()
@@ -107,7 +107,7 @@ final public class PopupDialogOverlayView: UIView {
         backgroundColor = .clear
         alpha = 0
 
-        addSubview(blurView)
+//        addSubview(blurView)
         addSubview(overlay)
     }
 

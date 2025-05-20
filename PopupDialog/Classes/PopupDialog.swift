@@ -71,6 +71,21 @@ final public class PopupDialog: UIViewController {
 
     /// Whether or not to shift view for keyboard display
     public var keyboardShiftsView = true
+    
+    /// The supported interface orientations
+    public var supportedOrientations: UIInterfaceOrientationMask = .landscape
+    
+    public override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return supportedOrientations
+    }
+    
+    public override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return .landscapeRight
+    }
+    
+    public override var shouldAutorotate: Bool {
+        return true
+    }
 
     // MARK: - Initializers
 
